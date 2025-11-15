@@ -34,13 +34,13 @@ export default function ServicesCards() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 btn-smooth"
             >
-              <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+              <div className="glass bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <service.icon className="text-blue-600" size={32} />
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2 animate-fade-in-up">{service.title}</h3>
               <p className="text-blue-600 font-semibold mb-4">{service.subtitle}</p>
               <p className="text-gray-600 leading-relaxed">{service.description}</p>
             </div>

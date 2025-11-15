@@ -6,11 +6,13 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img
-              src={localImage}
-              alt="JU Global Logo"
-              className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
-            />
+            <div className="glass rounded-3xl overflow-hidden">
+              <img
+                src={localImage}
+                alt="JU Global Logo"
+                className="rounded-3xl shadow-2xl w-full h-[500px] object-cover animate-fade-in-up"
+              />
+            </div>
           </div>
 
           <div className="space-y-6">
@@ -31,11 +33,11 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4">
-              <div className="text-center p-4 bg-white rounded-xl shadow">
+              <div className="text-center p-4 glass rounded-xl shadow hover-pop btn-smooth">
                 <div className="text-3xl font-bold text-blue-600">100+</div>
                 <div className="text-gray-600 mt-2">Trade Show Clients</div>
               </div>
-              <div className="text-center p-4 bg-white rounded-xl shadow">
+              <div className="text-center p-4 glass rounded-xl shadow hover-pop btn-smooth">
                 <div className="text-3xl font-bold text-blue-600">10+</div>
                 <div className="text-gray-600 mt-2">Countries Served</div>
               </div>

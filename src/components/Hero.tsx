@@ -21,13 +21,13 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 btn-smooth"
               >
                 Get Started
               </a>
               <a
                 href="#services"
-                className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-all"
+                className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-all btn-smooth"
               >
                 Our Services
               </a>
@@ -35,12 +35,15 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl transform rotate-3"></div>
-            <img
-              src="https://images.pexels.com/photos/4246209/pexels-photo-4246209.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="International Trade"
-              className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
-            />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl transform rotate-3 animate-subtle-spin opacity-30"></div>
+            <div className="relative rounded-3xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4246209/pexels-photo-4246209.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="International Trade"
+                className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover animate-fade-in-up"
+              />
+              <div className="absolute -bottom-6 right-6 w-48 h-48 bg-white rounded-full opacity-8 blur-3xl transform translate-y-6"></div>
+            </div>
           </div>
         </div>
       </div>
