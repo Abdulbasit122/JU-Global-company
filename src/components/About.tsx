@@ -1,3 +1,5 @@
+import localImage from "../ju global logo blue_page-0001.jpg";
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gray-50">
@@ -5,8 +7,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Shanghai Business District"
+              src={localImage}
+              alt="JU Global Logo"
               className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
             />
           </div>
